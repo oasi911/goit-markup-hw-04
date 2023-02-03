@@ -1,17 +1,21 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text-main-color);
   font-size: 14px;
   line-height: 1.2;
   background-color: var(--main-background-colors);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
 
 :root {
@@ -51,6 +55,19 @@ body {
   list-style: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page-header {
   display: flex;
   align-items: center;
@@ -68,6 +85,8 @@ body {
   letter-spacing: 0.03em;
   text-decoration: none;
   color: var(--hover-button-color);
+  padding-top: 24.5px;
+  padding-bottom: 24.5px;
 }
 
 .logo .second-part {
@@ -103,6 +122,11 @@ body {
 .footer li a:hover,
 .footer li a:focus {
   color: var(--hover-button-color);
+}
+
+.addresses .address-item {
+  padding-top: 31.5px;
+  padding-bottom: 31.5px;
 }
 
 .page-header .address {
@@ -174,9 +198,6 @@ body {
 }
 
 .advantages .slogan {
-  visibility: hidden;
-  pointer-events: none;
-  position: absolute;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.166;
@@ -188,6 +209,10 @@ body {
 .main-advantages {
   display: flex;
   justify-content: space-between;
+}
+
+.main-advantages .item {
+  width: 270px;
 }
 
 .main-advantages .item + .item {
@@ -230,7 +255,11 @@ body {
   margin-top: 50px;
 }
 
-.boxes .image {
+.main-boxes .item {
+  width: 370px;
+}
+
+img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -268,12 +297,13 @@ body {
     0px 1px 1px var(--team-box-shadow),
     0px 2px 1px var(--team-shadow-secondary-color);
   border-radius: 0px 0px 4px 4px;
+  width: 270px;
 }
 
 .team .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.187;
+
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-button-color);
@@ -365,7 +395,8 @@ body {
 }
 
 .main-buttons .button:hover,
-.maim-buttons .button:focus {
+.main-buttons .button:focus,
+.examples .button.current {
   color: var(--secondary-main-text-color);
   background: var(--hover-button-color);
   box-shadow: 0px 3px 1px var(--buttons-shadow-main-color),
@@ -378,6 +409,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+}
+
+.main-examples .item {
+  width: 370px;
 }
 
 .main-examples .item-text {
