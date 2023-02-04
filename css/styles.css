@@ -440,3 +440,28 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
+
+/* SVG */
+
+.svg-icons {
+  padding-bottom: 30px;
+}
+
+.svg-items {
+  display: flex;
+  list-style: none;
+  margin-left: 32px;
+  max-width: 206px;
+}
+
+.svg-items .svg-item {
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.svg-icons .svg-item:not(:last-child) {
+  margin-right: 10px;
+}
