@@ -39,6 +39,7 @@ p {
   --footer-address-color: rgba(255, 255, 255, 0.6);
   --buttons-shadow-main-color: rgba(0, 0, 0, 0.1);
   --buttons-shadow-secondary-color: rgba(0, 0, 0, 0.08);
+  --svg-button-color: #afb1b8;
 }
 
 .container {
@@ -137,6 +138,9 @@ img {
 .addresses .address-item {
   padding-top: 31.5px;
   padding-bottom: 31.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .page-header .address {
@@ -148,7 +152,7 @@ img {
 }
 
 .page-header .addresses .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .address .address-item {
@@ -234,6 +238,7 @@ img {
 }
 
 .advantages .slogan-item {
+  padding-top: 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.142;
@@ -323,7 +328,7 @@ img {
 
 .team .info {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
 }
 
 .team .description {
@@ -459,6 +464,26 @@ img {
 
 /* SVG */
 
+/* header SVG */
+
+.addresses .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
+/* advantages SVG */
+
+.main-advantages .icon-block {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+}
+
+/* team SVG */
+
 .svg-icons {
   padding-bottom: 30px;
 }
@@ -470,21 +495,13 @@ img {
   max-width: 206px;
 }
 
-/* .svg-items .svg-item {
-  display: flex;
-  height: 44px;
-  width: 44px;
-  align-items: center;
-  justify-content: center;
-} */
-
 .svg-icons .svg-item:not(:last-child) {
   margin-right: 10px;
 }
 
 .svg-items .link {
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--svg-button-color);
   display: flex;
   height: 44px;
   width: 44px;
@@ -498,6 +515,6 @@ img {
 
 .svg-items .link:hover,
 .svg-items .link:focus {
-  background-color: #2196f3;
-  color: #fff;
+  background-color: var(--hover-button-color);
+  color: var(--secondary-main-text-color);
 }
