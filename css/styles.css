@@ -340,6 +340,26 @@ img {
   margin-top: 10px;
 }
 
+/* Customers */
+
+.customers .slogan {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.166;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-button-color);
+}
+
+.customers .logo-list {
+  display: flex;
+}
+
+.customers .item {
+  width: 170px;
+  height: 92px;
+}
+
 /* Footer */
 
 .footer {
