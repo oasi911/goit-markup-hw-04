@@ -179,7 +179,7 @@ img {
       var(--background-gradient-color),
       var(--background-gradient-color)
     ),
-    url(/images/main-background.jpg);
+    url(../images/main-background.jpg);
   text-align: center;
   padding-bottom: 200px;
   padding-top: 200px;
