@@ -167,6 +167,11 @@ img {
   font-style: normal;
 }
 
+.addresses .icon {
+  margin-right: 10px;
+  fill: currentColor;
+}
+
 /* Banner */
 
 .banner {
@@ -261,6 +266,15 @@ img {
   margin-top: 10px;
 }
 
+.main-advantages .icon-block {
+  width: 270px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-background-color);
+}
+
 /* Boxes */
 
 .boxes {
@@ -344,6 +358,41 @@ img {
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
   margin-top: 10px;
+}
+
+.main-team .svg-icons {
+  padding-bottom: 30px;
+}
+
+.main-team .svg-items {
+  display: flex;
+  list-style: none;
+  margin-left: 32px;
+  max-width: 206px;
+}
+
+.main-team .svg-icons .svg-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.main-team .svg-items .link {
+  border-radius: 50%;
+  color: var(--svg-button-color);
+  display: flex;
+  height: 44px;
+  width: 44px;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-team .svg-items .icon {
+  fill: currentColor;
+}
+
+.main-team .svg-items .link:hover,
+.main-team .svg-items .link:focus {
+  background-color: var(--hover-button-color);
+  color: var(--secondary-main-text-color);
 }
 
 /* Customers */
@@ -531,6 +580,7 @@ img {
 
 .main-examples .item {
   width: 370px;
+  cursor: pointer;
 }
 
 .main-examples .item-text {
@@ -559,59 +609,10 @@ img {
   color: var(--secondary-text-color);
 }
 
-/* SVG */
-
-/* header SVG */
-
-.addresses .icon {
-  margin-right: 10px;
-  fill: currentColor;
-}
-
-/* advantages SVG */
-
-.main-advantages .icon-block {
-  width: 270px;
-  height: 120px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary-background-color);
-}
-
-/* team SVG */
-
-.main-team .svg-icons {
-  padding-bottom: 30px;
-}
-
-.main-team .svg-items {
-  display: flex;
-  list-style: none;
-  margin-left: 32px;
-  max-width: 206px;
-}
-
-.main-team .svg-icons .svg-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.main-team .svg-items .link {
-  border-radius: 50%;
-  color: var(--svg-button-color);
-  display: flex;
-  height: 44px;
-  width: 44px;
-  align-items: center;
-  justify-content: center;
-}
-
-.main-team .svg-items .icon {
-  fill: currentColor;
-}
-
-.main-team .svg-items .link:hover,
-.main-team .svg-items .link:focus {
-  background-color: var(--hover-button-color);
-  color: var(--secondary-main-text-color);
+.main-examples .item:hover,
+.main-examples .item:focus {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
