@@ -590,6 +590,7 @@ img {
 
 .main-examples .link {
   text-decoration: none;
+  display: block;
 }
 
 .main-examples .item-text {
@@ -618,10 +619,8 @@ img {
   color: var(--secondary-text-color);
 }
 
-.main-examples .item:hover,
-.main-examples .item:focus {
-  background: var(--secondary-main-text-color);
-  border: 1px solid var(--examples-outline);
+.main-examples .link:hover,
+.main-examples .link:focus {
   box-shadow: 0px 1px 1px var(--team-shadow-main-color),
     0px 4px 4px var(--portfolio-shadow-color),
     1px 4px 6px var(--portfolio-secondary-shadow-color);
